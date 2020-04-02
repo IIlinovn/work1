@@ -1,0 +1,12 @@
+<a routerLink="/">В начало</a> /
+<a routerLink="/user/edit">Изменить</a>
+
+<p>
+    {{user?.name}}
+</p>
+<p>
+    {{user?.email}}
+</p>
+<p>
+    <img [src]="'http://lesson-4.iilinov-n.myjino.ru/storage/' + user?.avatar" alt="">
+</p>

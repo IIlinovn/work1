@@ -1,0 +1,12 @@
+<h2>Изменить продукт {{product?.title}} </h2>
+
+<p *ngIf="product">
+
+
+    <input type="text" [(ngModel)]="product.title" placeholder="title"> <br>
+    <input type="text" [(ngModel)]="product.anons" placeholder="anons"> <br>
+    <input type="text" [(ngModel)]="product.desc" placeholder="desc"> <br>
+    <input type="text" [(ngModel)]="product.image" placeholder="image"> <br>
+
+    <button (click)="updateProduct()">Save</button>
+</p>

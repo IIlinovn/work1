@@ -1,0 +1,15 @@
+<p>
+  <input type="file"
+         id="file"
+         (change)="handleFileInput($event.target.files)">
+
+</p>
+
+<p *ngIf="user">
+
+<input type="text" [(ngModel)]="user.name" placeholder="name">
+<input type="text" [(ngModel)]="user.email" placeholder="email">
+<input type="text" [(ngModel)]="user.avatar" placeholder="avatar">
+
+<button (click)="update()">update</button>
+</p>
